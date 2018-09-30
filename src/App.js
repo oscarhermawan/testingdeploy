@@ -10,7 +10,7 @@ class App extends Component {
     cartItem:[]
   }
   componentDidMount(){
-    fetch('http://product-list.glitch.me/')
+    fetch('https://product-list.glitch.me/')
       .then(response => response.json())
       .then(hasil => this.setState({products:hasil}))
       .catch(err => console.log(err))
